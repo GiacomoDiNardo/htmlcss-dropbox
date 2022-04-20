@@ -20,8 +20,103 @@ body {
 }
 
 .header-content-left, .header-content-right {
-    padding: 16px;
+    padding: 16px 0;
     border: 1px dashed red;
     width: 400px;
 }
 
+
+.jumbo-section {
+    background-color: #b4d0e7;
+}
+
+.large-container {
+    background-color: yellow;
+    border: 1px dashed red;
+    width: 1000px;
+    margin: auto;
+    height: 500px;
+}
+
+.jumbo-title {
+    height: 100px;
+    border: 1px dashed green;
+    margin-bottom: 2rem;
+}
+
+.jumbo-content {
+    border: 1px dashed green;
+    height: 300px;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+
+.col-left {
+    border: 1px dashed black;
+    height: 200px;
+    width: 70%;
+}
+
+.col-right {
+    border: 1px dashed black;
+    height: 200px;
+    width: 30%;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: pink;
+    min-height: 500px;
+    padding: 5px;
+}
+
+.section-title {
+    background-color: aquamarine;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.section-radio {
+    padding-bottom: 30px;
+}
+
+.section-content {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.col {
+    border: 1px solid lightgrey;
+    min-width: calc((100% - 20px) / 3);
+    flex-grow: 1;
+}
+
+.col-header {
+    background-color: orange;
+    border-bottom: 1px solid lightgrey;
+    height: 20px;
+}
+
+.col-content {
+    padding: 10px;
+}
+
+.col-title {
+    background-color: aliceblue;
+    padding-bottom: 15px;
+}
+
+.col-price {
+    background-color: antiquewhite;
+    padding-bottom: 15px;
+}
+
+.col-term {
+    background-color: aqua;
+    padding-bottom: 30px;
+}
