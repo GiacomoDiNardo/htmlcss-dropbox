@@ -15,52 +15,75 @@ body {
 
 .header-container {
     justify-content: space-between;
-    padding: 10px;
-    border: 1px solid black;
+    padding: 5px 25px;
 }
 
 .header-content-left, .header-content-right {
     padding: 16px 0;
-    border: 1px dashed red;
-    width: 400px;
+    align-items: center;
 }
 
+.header-logo {
+    padding-right: 20px;
+}
+
+.header-link ul {
+    list-style: none;
+}
+
+.header-link li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.button .blue-button {
+    background-color: #2259F8;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
 
 .jumbo-section {
-    background-color: #b4d0e7;
+    background-color: #B6CFE6;
+    padding-top: 40px;
 }
 
 .large-container {
-    background-color: yellow;
-    border: 1px dashed red;
     width: 1000px;
     margin: auto;
-    height: 500px;
+    position: relative;
+    top: 4rem;
 }
 
 .jumbo-title {
-    height: 100px;
-    border: 1px dashed green;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    font-size: 35px;
 }
 
 .jumbo-content {
-    border: 1px dashed green;
-    height: 300px;
     flex-direction: row-reverse;
-    padding: 10px;
 }
 
 .col-left {
-    border: 1px dashed black;
-    height: 200px;
     width: 70%;
 }
 
+.col-left img {
+    width: 100%;
+}
+
 .col-right {
-    border: 1px dashed black;
-    height: 200px;
     width: 30%;
+}
+
+.col-right .button {
+    padding: 30px 0;
+}
+
+.col-right span {
+    display: block;
+    padding-bottom: 4rem;
 }
 
 .section {
