@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.header-container {
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.header-content-left, .header-content-right {
+    padding: 16px;
+    border: 1px dashed red;
+    width: 400px;
+}
+
