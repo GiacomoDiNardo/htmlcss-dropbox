@@ -39,14 +39,16 @@ body {
 
 .button .blue-button {
     background-color: #2259F8;
-    padding: 5px 10px;
+    padding: .5rem 1rem;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .jumbo-section {
     background-color: #B6CFE6;
     padding-top: 40px;
+    margin-bottom: 5rem;
 }
 
 .large-container {
@@ -87,59 +89,89 @@ body {
 }
 
 .section {
-    padding: 40px 0;
+    padding: 2rem 0;
 }
 
 .container {
     width: 800px;
     margin: auto;
-    background-color: pink;
     min-height: 500px;
-    padding: 5px;
+    padding: 30px 0;
 }
 
 .section-title {
-    background-color: aquamarine;
-    height: 100px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
 }
 
 .section-radio {
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
+}
+
+.section-radio span {
+    padding-right: 3rem;
 }
 
 .section-content {
-    gap: 10px;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .col {
     border: 1px solid lightgrey;
-    min-width: calc((100% - 20px) / 3);
+    width: calc((100% - 2rem) / 3);
     flex-grow: 1;
+    font-size: 14px;
 }
 
 .col-header {
-    background-color: orange;
     border-bottom: 1px solid lightgrey;
-    height: 20px;
+    text-align: center;
+    padding: .7rem;
 }
 
 .col-content {
-    padding: 10px;
+    padding: 1.5rem;
 }
 
 .col-title {
-    background-color: aliceblue;
     padding-bottom: 15px;
+    font-size: 25px;
 }
 
 .col-price {
-    background-color: antiquewhite;
     padding-bottom: 15px;
 }
 
 .col-term {
-    background-color: aqua;
     padding-bottom: 30px;
 }
+
+.col-list li {
+    padding-bottom: 1rem;
+}
+
+.col .button {
+    padding: 2rem 0;
+}
+
+.col .blue-button {
+    display: inline-block;
+    width: 100%;
+}
+
+.col-link {
+    padding-bottom: 3rem;
+}
+
+
+.col-rule {
+    border: 1px solid lightgrey;
+    width: 45px;
+    margin-bottom: 3rem;
+}
+
+.col-subtitle {
+    padding-bottom: 2rem;
+}
+
