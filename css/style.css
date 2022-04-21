@@ -52,6 +52,7 @@ body {
 .jumbo-section {
     background-color: #B6CFE6;
     padding-top: 40px;
+    padding-bottom: 25px;
     margin-bottom: 5rem;
 }
 
@@ -59,7 +60,7 @@ body {
     width: 1000px;
     margin: auto;
     position: relative;
-    top: 4rem;
+    top: 4.5rem;
 }
 
 .jumbo-title {
@@ -71,16 +72,16 @@ body {
     flex-direction: row-reverse;
 }
 
-.jumbo-section .col-left {
-    width: 70%;
+.col-left.col-wide {
+    flex-basis: 70%;
 }
 
 .jumbo-content img {
     width: 100%;
 }
 
-.jumbo-section .col-right {
-    width: 30%;
+.col-right.col-small {
+    flex-basis: 30%;
 }
 
 .col-right span {
@@ -93,9 +94,8 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 850px;
     margin: auto;
-    min-height: 500px;
     padding: 30px 0;
 }
 
@@ -113,8 +113,17 @@ body {
 }
 
 .section-content {
-    gap: 1rem;
     flex-wrap: wrap;
+}
+
+.col-gap-1 {
+    gap: 1rem;
+    --gap: 1rem;
+}
+
+.col-gap-2 {
+    gap: 2rem;
+    --gap: 2rem;
 }
 
 .col {
@@ -122,12 +131,11 @@ body {
 }
 
 .col.col-3 {
-    width: calc((100% - 2rem) / 3);
+    flex-basis: calc(100% / 3 - var(--gap));
 }
 
 .card {
     border: 1px solid lightgrey;
-    font-size: 14px;
     height: 100%;
 }
 
@@ -154,12 +162,20 @@ body {
     padding-bottom: 30px;
 }
 
+.col-list ul {
+    padding-bottom: 2rem;
+}
+
+.col-list li:last-child{
+    padding-bottom: 0;
+}
+
 .col-list li {
     padding-bottom: 1rem;
 }
 
 .button-padding {
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 }
 
 .col .blue-button {
@@ -194,11 +210,11 @@ body {
     padding-bottom: 2rem;
 }
 
-.section .col-left {
+.col-left {
     flex-basis: 60%;
 }
 
-.section .col-right {
+.col-right {
     flex-basis: 40%;
 }
 
@@ -206,9 +222,39 @@ body {
     padding-bottom: 2rem;
 }
 
-.button .white-button {
-    border: 1px solid black;
+.white-button {
+    background-color: white;
     padding: .8rem;
     text-decoration: none;
     color: black;
+}
+
+.border-button {
+    border: 1px solid black;
+}
+
+.col-img img {
+    width: 100%;
+}
+
+.special {
+    color: #5F062B;
+    padding-top: 50px;
+}
+
+.bg-blue {
+    background-color: #B6CFE6;
+}
+
+.col-baseline {
+    align-items: baseline;
+}
+
+.float {
+    float: right;
+}
+
+.extra-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
