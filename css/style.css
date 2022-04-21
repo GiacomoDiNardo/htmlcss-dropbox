@@ -115,7 +115,7 @@ body {
     padding-right: 3rem;
 }
 
-.section-content {
+.wrap {
     flex-wrap: wrap;
 }
 
@@ -191,7 +191,6 @@ body {
     padding-bottom: 3rem;
 }
 
-
 .col-rule {
     border: 1px solid lightgrey;
     width: 45px;
@@ -239,6 +238,50 @@ body {
 
 .col-img img {
     width: 100%;
+}
+
+.partners-col {
+    flex-basis: calc(100% / 3);
+}
+
+.partner {
+    flex-basis: calc(100% / 2);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner img {
+    width: 50%;
+    filter: invert(1);
+}
+
+.green {
+    background-color: #A4D49E;
+}
+
+.brown {
+    background-color: #5F062B;
+}
+
+.ciano {
+    background-color: #2891CB;
+}
+
+.red {
+    background-color: #F91B26;
+}
+
+.darkred {
+    background-color: #D00025;
+}
+
+.blue {
+    background-color: #171D7E;
+}
+
+.yellow {
+    background-color: #FCDA48;
 }
 
 .special {
