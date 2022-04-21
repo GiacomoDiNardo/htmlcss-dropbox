@@ -258,3 +258,18 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
 }
+
+.question-container {
+    border-top: 1px solid black;
+}
+
+.question {
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid black;
+}
+
+.small-arrow {
+    text-align: center;
+    padding: 0 1rem;
+}
