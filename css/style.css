@@ -20,6 +20,13 @@ body {
 .header-container {
     justify-content: space-between;
     padding: 5px 25px;
+    width: 100%;
+    background-color: white;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 1;
 }
 
 .header-content-left, .header-content-right {
@@ -63,7 +70,7 @@ body {
 
 .jumbo-container {
     position: relative;
-    top: 4.5rem;
+    top: 6rem;
 }
 
 .jumbo-title {
@@ -176,6 +183,12 @@ body {
 
 .col-list li {
     padding-bottom: 1rem;
+    display: flex;
+    gap: 5px;
+}
+
+.fa-check {
+    color: blue;
 }
 
 .button-padding {
@@ -241,23 +254,28 @@ body {
 }
 
 .partners-col {
-    flex-basis: calc(100% / 3);
+    width: calc(100% / 3);
+    flex-shrink: 0;
 }
 
 .partner {
     flex-basis: calc(100% / 2);
-    height: 300px;
-    justify-content: center;
-    align-items: center;
+    aspect-ratio: 1/1;
+    padding: 50px;
 }
 
 .partner img {
-    width: 50%;
+    width: 100%;
     filter: invert(1);
+    object-fit: contain;
 }
 
 .green {
     background-color: #A4D49E;
+}
+
+.bord-lightgreen {
+    border: 20px solid #D2EACE;
 }
 
 .brown {
@@ -293,6 +311,27 @@ body {
     background-color: #B6CFE6;
 }
 
+.info-partner {
+    padding: 2rem;
+    background-color: #F5F5F5;
+    aspect-ratio: 1/1;
+    overflow: auto;
+}
+
+.info-partner img {
+    width: 50%;
+}
+
+.info-partner p {
+    padding-bottom: 2rem;
+}
+
+.info-rule {
+    border-bottom: 1px solid lightgrey;
+    width: 50px;
+    margin: 2.5rem 0;
+}
+
 .col-baseline {
     align-items: baseline;
 }
@@ -324,6 +363,7 @@ body {
 .footer-section {
     background-color: #000000;
     color: white;
+    padding-top: 7rem;
 }
 
 .footer-content {
