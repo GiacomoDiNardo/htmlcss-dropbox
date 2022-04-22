@@ -1,3 +1,76 @@
 .blue-button:hover {
     background-color: #527bf7;
 }
+
+.white-button:hover {
+    color: grey;
+}
+
+.radio-input {
+    border-radius: 50%;
+}
+
+.default {
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgrey;
+    margin-right: 5px;
+}
+
+.blue-radio {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.white-radio {
+    display: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+
+.radio-input:hover {
+    border: none;
+}
+
+.radio-input:hover .blue-radio{
+    display: flex;
+}
+
+.radio-input:hover .white-radio{
+    display: block;
+}
+
+.question-hover {
+    justify-content: space-between;
+}
+
+.fa-angle-up {
+    display: none
+}
+
+.answer {
+    padding-top: 2rem;
+    display: none;
+}
+
+.question:hover .answer {
+    display: block;
+}
+
+.question:hover .fa-angle-down {
+    display: none;
+}
+
+.question:hover .fa-angle-up {
+    display: block;
+}
+
+.foot-col a:hover {
+    text-decoration: underline;
+}
