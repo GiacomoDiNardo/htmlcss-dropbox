@@ -60,6 +60,8 @@ li .underline {
     border-radius: 15px;
 }
 
+
+
 .radio-input {
     border-radius: 50%;
 }
@@ -100,8 +102,16 @@ li .underline {
     display: block;
 }
 
-.question-hover {
+.question {
+    padding: 0;
+    position: relative;
+    transition: padding-bottom .3s;
+}
+
+.question-box {
     justify-content: space-between;
+    padding: 2rem 0;
+    background-color: white;
 }
 
 .fa-angle-up {
@@ -109,72 +119,107 @@ li .underline {
 }
 
 .answer {
-    padding-top: 2rem;
-    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+    transition: top .6s;
+}
+
+.question:hover {
+    padding-bottom: 100px;
 }
 
 .question:hover .answer {
-    display: block;
+    top: 100px;
 }
 
 .question:hover .fa-angle-down {
-    display: none;
+    animation-name: arrow-rotate;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
-.question:hover .fa-angle-up {
-    display: block;
+@keyframes arrow-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
 }
+
+/* .question:hover .fa-angle-up {
+    display: block;
+} */
 
 .foot-col a:hover {
     text-decoration: underline;
 }
 
 .green.bord-lightgreen{
-    border: 20px solid #A4D49E;
+    border: 30px solid #A4D49E;
 }
 
 .green.bord-lightgreen:hover {
-    border: 20px solid #D2EACE;
+    border: 30px solid #D2EACE;
 }
 
 .brown {
-    border: 20px solid #5F062B;
+    border: 30px solid #5F062B;
 }
 
 .brown:hover {
-    border: 20px solid #8a3057;
+    border: 30px solid #8a3057;
 }
 
 .ciano {
-    border: 20px solid #2891CB;
+    border: 30px solid #2891CB;
 }
 
 .ciano:hover {
-    border: 20px solid #6bb1d6;
+    border: 30px solid #6bb1d6;
 }
 
 .red {
-    border: 20px solid #F91B26;
+    border: 30px solid #F91B26;
 }
 
 .red:hover {
-    border: 20px solid #f57077;
+    border: 30px solid #f57077;
+}
+
+.darkred {
+    border: 30px solid #D00025;
 }
 
 .darkred:hover {
-    border: 20px solid #c4566a;
+    border: 30px solid #c4566a;
+}
+
+.partner.bg-blue {
+    border: 30px solid #B6CFE6;
 }
 
 .partner.bg-blue:hover {
-    border: 20px solid #d8e7f5;
+    border: 30px solid #d8e7f5;
+}
+
+.blue {
+    border: 30px solid #171D7E;
 }
 
 .blue:hover {
-    border: 20px solid #3c419e;
+    border: 30px solid #3c419e;
+}
+
+.yellow {
+    border: 30px solid #FCDA48;
 }
 
 .yellow:hover {
-    border: 20px solid #fdea96;
+    border: 30px solid #fdea96;
 }
 
 .col-default {
