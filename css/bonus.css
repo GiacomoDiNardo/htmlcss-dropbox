@@ -1,22 +1,63 @@
 .header-container {
+    padding: 0 25px;
     max-height: 70px;
+}
+
+.header-content-left {
+    padding: 0;
+}
+
+.header-link ul {
+    align-items: center;
 }
 
 .header-link li a {
     padding: 26px 20px;
+    display: inline-block;
 }
 
+li .underline {
+    background-color: blue;
+    width: 0%;
+    height: 3px;
+}
 
-.header-link a:hover {
-    border-bottom: 3px solid blue;
+.header-link a:hover + .underline {
+    animation-name: link-underline;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-underline {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.white-button {
+    border-radius: 5px;
+    transition: border-radius .3s;
+}
+
+.white-button:hover {
+    border-radius: 15px;
+    color: grey;
+
+}
+
+.blue-button {
+    border-radius: 5px;
+    transition: background-color .3s;
+    transition: border-radius .3s;
 }
 
 .blue-button:hover {
     background-color: #527bf7;
-}
-
-.white-button:hover {
-    color: grey;
+    border-radius: 15px;
 }
 
 .radio-input {
@@ -88,20 +129,32 @@
     text-decoration: underline;
 }
 
-.bord-lightgreen {
-    border: none;
+.green.bord-lightgreen{
+    border: 20px solid #A4D49E;
 }
 
 .green.bord-lightgreen:hover {
     border: 20px solid #D2EACE;
 }
 
+.brown {
+    border: 20px solid #5F062B;
+}
+
 .brown:hover {
     border: 20px solid #8a3057;
 }
 
+.ciano {
+    border: 20px solid #2891CB;
+}
+
 .ciano:hover {
     border: 20px solid #6bb1d6;
+}
+
+.red {
+    border: 20px solid #F91B26;
 }
 
 .red:hover {
